@@ -16,7 +16,7 @@ const Contact = () => {
           </p>
 
           <form
-            action="https://formspree.io/f/your_form_id" // Replace with your form handler
+            action="https://formspree.io/f/your_form_id"
             method="POST"
             className="space-y-4"
           >
@@ -73,7 +73,7 @@ const Contact = () => {
               href="mailto:contact@owezone.app"
               className="text-[#0B1D51] font-semibold underline hover:text-[#8CCDEB]"
             >
-              contact@owezone.app
+              nishantrajput7017@gmail.com
             </a>
           </div>
         </section>

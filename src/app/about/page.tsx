@@ -4,42 +4,68 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>About | OweZone</title>
-        <meta name="description" content="Learn more about the OweZone app" />
+        <title>OweZone</title>
+        <meta
+          name="description"
+          content="OweZone helps you manage shared expenses and groceries effortlessly."
+        />
+         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="min-h-screen bg-[#FFE3A9] text-[#0B1D51] pt-20 px-6">
-        <section className="max-w-4xl mx-auto py-12">
-          <h1 className="text-4xl font-bold mb-6 border-b-4 border-[#8CCDEB] inline-block pb-2">
-            About OweZone
-          </h1>
+      <main className="min-h-screen bg-[#FFE3A9] text-[#0B1D51] pt-24 px-4 sm:px-6 lg:px-8">
+        <section className="max-w-5xl mx-auto space-y-10">
+          {/* Header */}
+          <div>
+            <h1 className="text-4xl md:text-5xl font-bold mb-2 text-center">About OweZone</h1>
+            <p className="text-center text-lg text-[#0B1D51]/80 max-w-2xl mx-auto">
+              The ultimate app for roommates and shared households to split bills, manage groceries,
+              and level up your budgeting game.
+            </p>
+          </div>
 
-          <p className="text-lg leading-relaxed mb-6">
-            <strong>OweZone</strong> is your all-in-one solution to effortlessly manage shared expenses and grocery tracking — perfect for roommates, friends, or shared households. With an intuitive design and a touch of gamification, OweZone keeps everyone in sync and stress-free.
-          </p>
+          {/* Cards */}
+          <div className="grid gap-8 md:grid-cols-2">
+            {/* Why OweZone Card */}
+            <div className="bg-white rounded-2xl p-6 shadow-lg">
+              <h2 className="text-2xl font-bold mb-4 text-[#0B1D51]">✨ Why OweZone?</h2>
+              <ul className="list-disc pl-5 space-y-2 text-base leading-relaxed text-[#0B1D51]/90">
+                <li>Track and split expenses fairly</li>
+                <li>Collaborative grocery list for your room</li>
+                <li>Settle up with transparency and history</li>
+                <li>Choose avatars for yourself and your room</li>
+              </ul>
+            </div>
 
-          <h2 className="text-2xl font-semibold mb-4">✨ Why OweZone?</h2>
-          <ul className="list-disc pl-6 mb-6 space-y-2 text-base">
-            <li>Track and split expenses fairly</li>
-            <li>Collaborative grocery list for your room</li>
-            <li>Settle up with transparency and history</li>
-            <li>Choose avatars and level up your room</li>
-          </ul>
+            {/* Tech Stack Card */}
+            <div className="bg-white rounded-2xl p-6 shadow-lg">
+              <h2 className="text-2xl font-bold mb-4 text-[#0B1D51]">🛠 Built With</h2>
+              <ul className="list-disc pl-5 space-y-2 text-base leading-relaxed text-[#0B1D51]/90">
+                <li><strong>App:</strong> React Native</li>
+                <li><strong>Backend:</strong> Node.js, Express</li>
+                <li><strong>Realtime Chat:</strong> Socket.IO</li>
+                <li><strong>DataBase:</strong> MongoDB</li>
+              </ul>
+            </div>
 
-          <h2 className="text-2xl font-semibold mb-4">🛠 Built With</h2>
-          <ul className="list-disc pl-6 mb-6 space-y-2 text-base">
-            <li><strong>App:</strong> React Native + NativeWind</li>
-            <li><strong>Backend:</strong> Node.js, Express, MongoDB</li>
-            <li><strong>Realtime Chat:</strong> Socket.IO</li>
-            <li><strong>Authentication:</strong> Firebase Auth (Phone OTP)</li>
-          </ul>
+            {/* Description Card */}
+            <div className="bg-white rounded-2xl p-6 shadow-lg md:col-span-2">
+              <h2 className="text-2xl font-bold mb-4 text-[#0B1D51]">💡 How It Works</h2>
+              <p className="text-base leading-relaxed text-[#0B1D51]/90">
+                OweZone helps you and your housemates stay organized. Each room acts as a hub
+                where members can add expenses, split bills automatically, maintain shared grocery
+                lists, and keep a record of past transactions. Fun elements like avatars and room
+                levels add a gamified experience to make managing boring tasks a bit more fun!
+              </p>
+            </div>
+          </div>
 
-          <div className="mt-10">
+          {/* Call to Action */}
+          <div className="text-center pt-6 pb-10">
             <a
-              href="/apk/OweZone.apk"
-              className="inline-block bg-[#8CCDEB] text-[#0B1D51] font-semibold px-6 py-2 rounded-full hover:opacity-90 transition"
+              href="/apk/base.apk"
+              className="inline-block bg-[#8CCDEB] text-[#0B1D51] font-semibold text-lg px-8 py-3 rounded-full shadow-md hover:opacity-90 transition"
             >
-              Download APK
+              Download OweZone
             </a>
           </div>
         </section>

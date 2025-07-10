@@ -10,6 +10,7 @@ export default function Home() {
           name="description"
           content="OweZone helps you manage shared expenses and groceries effortlessly."
         />
+         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className="bg-[#FFE3A9] text-[#0B1D51] mt-15">
