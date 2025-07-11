@@ -26,7 +26,7 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-3 text-[#8CCDEB]">Contact Us</h3>
           <p className="text-sm">
-            Email: <a href="mailto:owe.zone.app@gmail.com" className="underline">owe.zone.app@gmail.com</a>
+            Email: <a href="mailto:owe.zone.app@gmail.com" className="underline">nishantrajput7017@gmail.com</a>
           </p>
         </div>
       </div>
