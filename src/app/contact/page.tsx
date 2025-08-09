@@ -1,22 +1,24 @@
-"use client"
-import Head from 'next/head';
-import { useState } from 'react';
+"use client";
+import Head from "next/head";
+import { useState } from "react";
 
 const Contact = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
 
-  const handleSendEmail = (e) => {
+  const handleSendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!message.trim()) {
-      alert('Please enter your message.');
+      alert("Please enter your message.");
       return;
     }
 
-    const subject = `Message from ${name || 'OweZone Website Visitor'}`;
-    const body = `From: ${name || 'Anonymous'} (${email || 'No email provided'})\n\n${message}`;
+    const subject = `Message from ${name || "OweZone Website Visitor"}`;
+    const body = `From: ${name || "Anonymous"} (${
+      email || "No email provided"
+    })\n\n${message}`;
 
     const mailtoUrl = `mailto:owezone.app@gmail.com?subject=${encodeURIComponent(
       subject
@@ -89,7 +91,7 @@ const Contact = () => {
           </form>
 
           <div className="mt-8 text-center text-sm text-[#4A4A6A]">
-            Or email us directly at:{' '}
+            Or email us directly at:{" "}
             <a
               href="mailto:owezone.app@gmail.com"
               className="text-[#0B1D51] font-semibold underline hover:text-[#8CCDEB]"
