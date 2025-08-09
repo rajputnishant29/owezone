@@ -1,6 +1,30 @@
+"use client"
 import Head from 'next/head';
+import { useState } from 'react';
 
 const Contact = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSendEmail = (e) => {
+    e.preventDefault();
+
+    if (!message.trim()) {
+      alert('Please enter your message.');
+      return;
+    }
+
+    const subject = `Message from ${name || 'OweZone Website Visitor'}`;
+    const body = `From: ${name || 'Anonymous'} (${email || 'No email provided'})\n\n${message}`;
+
+    const mailtoUrl = `mailto:owezone.app@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoUrl;
+  };
+
   return (
     <>
       <Head>
@@ -15,11 +39,7 @@ const Contact = () => {
             Have a question, feedback, or bug to report? We’d love to hear from you!
           </p>
 
-          <form
-            action="https://formspree.io/f/your_form_id"
-            method="POST"
-            className="space-y-4"
-          >
+          <form onSubmit={handleSendEmail} className="space-y-4">
             <div>
               <label htmlFor="name" className="block text-sm font-medium mb-1">
                 Your Name
@@ -27,8 +47,8 @@ const Contact = () => {
               <input
                 type="text"
                 id="name"
-                name="name"
-                required
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 className="w-full px-4 py-2 rounded-lg border border-[#8CCDEB] focus:outline-none focus:ring-2 focus:ring-[#8CCDEB]"
               />
             </div>
@@ -40,8 +60,8 @@ const Contact = () => {
               <input
                 type="email"
                 id="email"
-                name="email"
-                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="w-full px-4 py-2 rounded-lg border border-[#8CCDEB] focus:outline-none focus:ring-2 focus:ring-[#8CCDEB]"
               />
             </div>
@@ -52,8 +72,9 @@ const Contact = () => {
               </label>
               <textarea
                 id="message"
-                name="message"
                 rows={4}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 required
                 className="w-full px-4 py-2 rounded-lg border border-[#8CCDEB] focus:outline-none focus:ring-2 focus:ring-[#8CCDEB]"
               />
