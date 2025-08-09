@@ -15,7 +15,7 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-3 text-[#8CCDEB]">Get the App</h3>
           <a
-            href="/apk/base.apk"
+            href="/apk/OweZone0.0.2.apk"
             className="inline-block mt-2 bg-[#8CCDEB] text-[#0B1D51] font-semibold px-5 py-2 rounded-full hover:opacity-90 transition"
           >
             Download APK

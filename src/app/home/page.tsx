@@ -31,7 +31,7 @@ export default function Home() {
             Ready to simplify your room expenses?
           </h2>
           <a
-            href="/apk/base.apk"
+            href="/apk/OweZone0.0.2.apk"
             className="inline-block mt-4 bg-[#8CCDEB] text-[#0B1D51] font-semibold px-8 py-3 rounded-full hover:opacity-90 transition"
           >
             Download OweZone APK

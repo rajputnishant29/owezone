@@ -44,7 +44,7 @@ const Navbar = () => {
           <Link href="/contact" className="block hover:underline">Contact</Link>
           <Link href="/privacypolicy" className="block hover:underline">Privacy Policy</Link>
           {/* <a
-            href="/apk/OweZone.apk"
+            href="/apk/OweZone0.0.2.apk"
             className="inline-block bg-[#FF6584] text-white w-full text-center px-4 py-2 rounded-full font-semibold"
           >
             Download

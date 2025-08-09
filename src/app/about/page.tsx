@@ -62,7 +62,7 @@ const About = () => {
           {/* Call to Action */}
           <div className="text-center pt-6 pb-10">
             <a
-              href="/apk/base.apk"
+              href="/apk/OweZone0.0.2.apk"
               className="inline-block bg-[#8CCDEB] text-[#0B1D51] font-semibold text-lg px-8 py-3 rounded-full shadow-md hover:opacity-90 transition"
             >
               Download OweZone
