@@ -9,7 +9,7 @@ const Contact = () => {
       </Head>
 
       <main className="min-h-screen bg-[#FFE3A9] flex items-center justify-center pt-20 px-4">
-        <section className="bg-white shadow-lg rounded-2xl p-8 w-full max-w-xl text-[#0B1D51]">
+        <section className="bg-white shadow-lg rounded-2xl p-8 w-full max-w-xl text-[#0B1D51] mb-5">
           <h1 className="text-3xl font-bold mb-2 text-center">Contact Us</h1>
           <p className="text-sm text-center text-[#4A4A6A] mb-6">
             Have a question, feedback, or bug to report? We’d love to hear from you!
@@ -70,10 +70,10 @@ const Contact = () => {
           <div className="mt-8 text-center text-sm text-[#4A4A6A]">
             Or email us directly at:{' '}
             <a
-              href="mailto:contact@owezone.app"
+              href="mailto:owezone.app@gmail.com"
               className="text-[#0B1D51] font-semibold underline hover:text-[#8CCDEB]"
             >
-              nishantrajput7017@gmail.com
+              owezone.app@gmail.com
             </a>
           </div>
         </section>
