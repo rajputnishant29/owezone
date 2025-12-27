@@ -38,6 +38,18 @@ export default function Home() {
           </a>
         </section>
 
+         <section className="relative w-full aspect-[1919/1078] overflow-hidden">
+          <Image
+            src="/My_QR_Code_1-1024.jpeg"
+            alt="OweZone Poster"
+            fill
+            className="object-cover"
+            priority
+          />
+
+        </section>
+        
+
         {/* About Section */}
 <section className="max-w-6xl mx-auto py-10 px-4 sm:px-8">
   <div className="text-center mb-12">
