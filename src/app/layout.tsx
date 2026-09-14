@@ -69,8 +69,12 @@ export const metadata: Metadata = {
     images: ["/images/illustrations/hero_roommates.png"],
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.png", type: "image/png" },
+      { url: "/images/illustrations/icon.png", type: "image/png" },
+    ],
     apple: "/images/illustrations/icon.png",
+    shortcut: "/favicon.png",
   },
 };
 
