@@ -1,0 +1,6 @@
+[[redirects]]
+  from = "/*"
+  to = "https://owezone.rajputnishant.in/:splat"
+  status = 301
+  force = true
+  conditions = {Host = ["owezone-web.netlify.app"]}
