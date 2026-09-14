@@ -11,7 +11,7 @@ export const siteConfig = {
   tagline: "Shared living, sorted.",
   description:
     "Keep expenses, groceries, room balances and everyday roommate stuff together — without the awkward math. The modern household management app for roommates.",
-  url: "https://owezone.app",
+  url: "https://owezone.rajputnishant.in",
   ogImage: "/images/illustrations/hero_roommates.png",
 
   // Centralized Play Store & Download Configuration
