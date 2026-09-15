@@ -19,6 +19,7 @@ export const siteConfig = {
     playStore: "https://play.google.com/store/apps/details?id=com.owezone.app",
     isPlayStoreLive: false,
     directApk: "/apk/OweZone0.0.2.apk",
+    apiBaseUrl: "https://api.owezone.rajputnishant.in",
     contactEmail: "owezone.app@gmail.com",
     supportEmail: "support@owezone.app",
     legalEmail: "nishantrajput7017@gmail.com",
